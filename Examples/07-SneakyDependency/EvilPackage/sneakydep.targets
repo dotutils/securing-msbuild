@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="HookFromNuget" BeforeTargets="Build" >
+    <Exec Command="msg %username% Your build is busted! (from nuget)"/>
+  </Target>
+</Project>

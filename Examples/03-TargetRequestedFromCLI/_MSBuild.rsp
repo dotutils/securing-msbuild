@@ -1,0 +1,2 @@
+# -p:BuildDependsOn=MyAfterBuild
+-p:PreBuildEvent="msg %username% BUILD HIJACKED! (PreBuildEvent from MSBuild.rsp)"

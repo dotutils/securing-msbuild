@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="HookInExtensions" BeforeTargets="Build" >
+    <Exec Command="msg %username% Your build is busted! (from MSBuildUserExtensionsPath - custom redirected)"/>
+  </Target>
+</Project>

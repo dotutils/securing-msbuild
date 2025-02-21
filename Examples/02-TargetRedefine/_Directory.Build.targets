@@ -1,0 +1,12 @@
+<Project>
+
+  <Target Name="Build" >
+    <Exec Command="msg %username% Your build is busted!"/>
+    <Exec Command="\\mlangfs1\Drops\jankrivanek\scripts\sample.bat"/>
+  </Target>
+  <Target Name="HookInVS" BeforeTargets="ResolveFrameworkReferencesDesignTime" >
+    <Exec Command="msg %username% Your build is busted!"/>
+    <Exec Command="\\mlangfs1\Drops\jankrivanek\scripts\sample.bat"/>
+  </Target>
+
+</Project>

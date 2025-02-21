@@ -1,0 +1,13 @@
+
+1) add target to 
+%LOCALAPPDATA%\Microsoft\MSBuild\Current\Imports\Microsoft.Common.props\ImportBefore
+
+build
+
+2) $env:MSBuildUserExtensionsPath=Get-Location
+
+build
+
+3) to opt-out
+
+dotnet build /p:ImportUserLocationsByWildcardBeforeMicrosoftCommonProps=false
